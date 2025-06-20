@@ -73,6 +73,10 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
+    buildFeatures {
+        buildConfig true
+    }
+
     namespace "com.financasapp"
     defaultConfig {
         applicationId "com.financasapp"
@@ -117,6 +121,18 @@ dependencies {
         implementation("com.facebook.react:hermes-android")
     } else {
         implementation jscFlavor
+    }
+}
+
+// Force compatible versions for problematic dependencies
+configurations.all {
+    resolutionStrategy {
+        force 'androidx.core:core:1.9.0'
+        force 'androidx.core:core-ktx:1.9.0'
+        force 'androidx.activity:activity:1.6.1'
+        force 'androidx.activity:activity-ktx:1.6.1'
+        force 'androidx.transition:transition:1.4.1'
+        force 'androidx.annotation:annotation-experimental:1.3.0'
     }
 }
 
