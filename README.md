@@ -1,79 +1,85 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 💰 FinancasApp - Seu Gerenciador Financeiro Pessoal
 
-# Getting Started
+![Tela Principal do App](https://i.imgur.com/your-image-url.png) <!-- Você pode tirar um print e substituir essa URL -->
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+Este é um aplicativo de finanças pessoais desenvolvido com **React Native**, criado para ajudar a controlar suas receitas e despesas de forma simples e intuitiva.
 
-## Step 1: Start the Metro Server
+## ✨ Funcionalidades
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+- **Visão Geral do Saldo:** Acompanhe seu saldo atual em tempo real.
+- **Registro de Transações:** Adicione novas receitas e despesas facilmente.
+- **Histórico Completo:** Visualize todas as suas transações em uma lista organizada.
+- **Interface Moderna:** Um design limpo e moderno para uma experiência de usuário agradável.
+- **Navegação Intuitiva:** Alterne facilmente entre as telas do aplicativo.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## 🛠️ Tecnologias Utilizadas
+
+- [React Native](https://reactnative.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React Navigation](https://reactnavigation.org/)
+
+## 🚀 Como Executar o Projeto
+
+Para rodar este projeto localmente, siga os passos abaixo.
+
+### Pré-requisitos
+
+Certifique-se de que você tem o ambiente de desenvolvimento React Native configurado na sua máquina. Siga o [guia oficial](https://reactnative.dev/docs/environment-setup) caso precise de ajuda.
+
+- Node.js
+- JDK
+- Android Studio (para rodar no emulador/dispositivo Android)
+
+### 1. Clone o Repositório
 
 ```bash
-# using npm
+git clone https://github.com/JuniorFerreiraJ/FinancasApp.git
+cd FinancasApp
+```
+
+### 2. Instale as Dependências
+
+Use o NPM para instalar todos os pacotes necessários para o projeto.
+
+```bash
+npm install
+```
+
+### 3. Inicie o Servidor Metro
+
+O Metro é o bundler JavaScript que vem com o React Native.
+
+```bash
 npm start
-
-# OR using Yarn
-yarn start
 ```
 
-## Step 2: Start your Application
+### 4. Execute o Aplicativo
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+Com o Metro rodando em um terminal, abra um **novo terminal** na raiz do projeto e execute um dos comandos abaixo:
 
-### For Android
+#### Para Android
 
 ```bash
-# using npm
 npm run android
-
-# OR using Yarn
-yarn android
 ```
 
-### For iOS
+#### Para iOS (apenas em macOS)
 
 ```bash
-# using npm
 npm run ios
-
-# OR using Yarn
-yarn ios
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+O aplicativo deverá ser compilado e iniciado no seu emulador ou dispositivo físico conectado.
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+## 📂 Estrutura de Pastas
 
-## Step 3: Modifying your App
+O código-fonte do projeto está organizado da seguinte forma dentro da pasta `src/`:
 
-Now that you have successfully run the app, let's modify it.
+- `components/`: Componentes reutilizáveis (Ex: Card).
+- `navigation/`: Configuração da navegação e rotas do app.
+- `screens/`: As telas principais do aplicativo (Home, Adicionar Renda, etc.).
+- `styles/`: Estilos globais e paleta de cores.
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+---
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Feito com ❤️ por [Seu Nome](https://github.com/JuniorFerreiraJ).
